@@ -1,0 +1,751 @@
+* {
+    margin: 0;
+    font-family: 'Inter', sans-serif; 
+    box-sizing: border-box; 
+}
+
+.navbar{
+    height: 100px;
+    background-color: #111111;
+    color:white;
+    display: flex;
+    border-bottom: 2px solid black;
+      
+}
+.logo{
+    background-image: url("/assets/images/logo-color-flip.png");
+    height: 100px;
+    width:375px;
+    background-size: 150%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left:13px;
+}
+
+.non-image{
+    width:100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color:white;
+    font-weight: 700 ;
+    text-decoration: none;
+}
+
+.non-image a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-right: 25px;
+    color:#ffffff;
+}
+
+
+.hero{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    height:540px;
+}
+.suit-image{
+    margin-top: 30px;
+    margin-left:20px;
+    border-radius: 50%;
+    height: 500px;
+    width:550px;
+    background-image: url("/assets/images/suit-image.jpg");
+    background-size: cover;
+    background-position: 37% 50%; /* Explicitly center the image */
+    background-repeat: no-repeat;
+    border:0.5px solid grey;
+    box-shadow: inset;
+    
+}
+
+/* Main container styling */
+/* Home Text Container */
+.home-text {
+    display: flex;
+    align-items: flex-start; /* Move content higher */
+    justify-content: flex-start; /* Align content to the left */
+    min-height: auto; /* Allow natural height */
+    background: #ffffff; /* Fixed invalid color code */
+    padding: 3vw; /* Reduced padding to save space */
+    box-sizing: border-box; /* Ensure padding is included in size */
+}
+
+/* Typography and Text Styling */
+.text-stuff {
+    font-family: 'Inter', sans-serif; /* Modern, clean font */
+    line-height: 1.7; /* Enhanced readability */
+    color: #1c1e21; /* Slightly darker for better contrast */
+    max-width: 650px; /* Optimal reading width */
+}
+
+/* Heading Styling */
+.heading-home {
+    font-size: 3.5rem; /* Slightly smaller size */
+    font-weight: 900; /* Extra bold for emphasis */
+    background: linear-gradient(90deg, #8a2be2, #4a90e2); /* Sleek gradient */
+    -webkit-background-clip: text; /* Ensure gradient clips correctly */
+    color: transparent; /* Make text gradient visible */
+    margin-bottom: 0.9rem; /* Reduced margin to save space */
+}
+
+/* Paragraph Styling */
+.para-home, .para-secondary {
+    font-size: 1.4rem; /* Slightly smaller for better fit */
+    margin-bottom: 1.2rem; /* Reduced spacing */
+}
+
+/* CTA Button Styling */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px; /* Smaller button for better spacing */
+    font-size: 1rem;
+    font-weight: 700; /* Bolder for better emphasis */
+    color: #fff; /* White text */
+    background: linear-gradient(90deg, #ff6f61, #de3163); /* Eye-catching gradient */
+    border: none;
+    border-radius: 12px; /* Softer, rounded corners */
+    cursor: pointer; /* Indicate interactivity */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+/* Button Hover Effect */
+.cta-button:hover {
+    transform: translateY(-1px); /* More dynamic lift effect */
+    box-shadow: 0 12px 24px rgba(222, 49, 99, 0.3); /* Enhanced shadow */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .heading-home {
+        font-size: 2.5rem; /* Adjust heading size */
+    }
+
+    .para-home, .para-secondary {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+
+    .home-text {
+        justify-content: center; /* Center content on smaller screens */
+        text-align: center; /* Center text for better readability */
+    }
+}
+
+
+.featured-projects {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.projects-heading {
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.line {
+    flex: 1;
+    height: 2px;
+    background: #ccc;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1rem; /* Add padding to create space between the image and border */
+}
+
+.project-thumbnail-wrapper {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5px; /* Rounded corners for the image box */
+    margin-bottom: 1rem; /* Add space between the image and the project info */
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-info {
+    padding: 0 1rem; /* Add padding inside the project info */
+    text-align: left;
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(90deg, #4a90e2, #8a2be2);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-heading {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+footer {
+    height: 90px;
+    width: 100%;
+    background-color:#e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 0 75px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+}
+
+footer a {
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+footer i {
+    font-size: 48px;
+}
+footer p{
+    font-size: 1.2rem;
+}
+
+.instagram-icon i {
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linkedin-icon i {
+    color: #0077b5;
+}
+
+.github-icon i {
+    color: #333;
+}
+
+
+.hero-projects{
+    height:1000px;
+    background-color: #ffffff;
+}
+
+.non-project{
+    padding-top:20px;
+    height:250px;
+    width:100%;
+    display: flex;
+
+}
+
+.non-project-non-image{
+    height:200px;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right:10px;
+    color:black;
+}
+
+.portfolio{
+    height:150px;
+    width:100%;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    font-size:2.5rem;
+    font-weight: bold; /* Optional */
+    background: linear-gradient(to right, #00B0FF, #8E24AA); /* Light Blue to Soft Purple Gradient */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    color: transparent; /* Make the text itself transparent to show the gradient */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.non-portfolio
+{
+    height:100px;
+    width:100%;
+    display: flex;
+    justify-content: right;
+    max-width: 400px; /* Limit the width */
+    word-wrap: break-word; /* Ensures long words wrap */
+    overflow-wrap: break-word; 
+    text-align: right;
+    font-size: 1.3rem;
+    background: linear-gradient(to right, #9b59b6, #f39c12); /* Magenta to Shimmering Gold Gradient */
+-webkit-background-clip: text;
+color: transparent;/* Make the text itself transparent to show the gradient */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+.non-project-image{
+    height:200px;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    margin-left:10px;
+}
+
+.image1{
+    width:50%;
+    background-image: url("/assets/images/aesthetic-computer.jpg");
+    background-size: cover;
+    border-radius: 5px;
+    height:100%;
+
+}
+
+
+.projects-not-non{
+    height:750px;
+    width:100%;
+    padding-left: 50px;
+    padding-right:50px;
+}
+
+
+.contacts-body{
+    height:550px;
+    display: flex;
+}
+
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    font-size: 2rem; /* Adjust the size as needed */
+    font-weight: bold;
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient from left to right */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    color: transparent;
+    margin-bottom: 10px;
+}
+
+.contact-form-container p {
+    text-align: center;
+    font-size: 1.25rem; /* Adjust the size as needed */
+    font-weight: bold;
+    background-image: linear-gradient(to right, #f8a5c2, #f7b7a3); /* Softer, more aesthetic gradient */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 0px;
+    display: block;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form-container textarea {
+    resize: vertical;
+}
+
+.contact-form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.contact-form-container button:hover {
+    background-color: #45a049;
+}
+
+
+.image-contacts{
+    width:69%;
+    height:100%;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.image-put {
+    width: 95%;
+    height: 95%;
+    background-color: #333;
+    border-radius: 5px;
+    background-image: url("/assets/images/contact-me-image.jpg");
+    background-size: cover;
+    background-position: center center; /* Default centering */
+    background-repeat: no-repeat;
+}
+
+.about-hero{
+    height:1600px;
+   
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top:15px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.skills-heading {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    background: linear-gradient(to right, #2c3e50, #34495e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    letter-spacing: 1px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 90%;
+}
+
+.skill {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.skill span {
+    font-size: 15px;
+    font-weight: bold;
+    color: #444;
+    margin-top: 8px;
+}
+
+/* Responsive Grid */
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+
+
+/* Overall Container */
+.education-section {
+    padding-top: 0;
+    max-width: 1200px;       /* Slightly wider for a premium look */
+        /* Larger spacing for a polished feel */
+    text-align: center;
+    justify-content: center;
+           /* More side padding for breathing room */
+}
+
+/* Heading */
+.education-heading {
+    font-size: 42px;        /* Bigger and more commanding */
+    font-weight: 800;       /* Stronger emphasis */
+    color: #222;           /* Darker for better contrast */
+    margin-bottom: 50px;    /* More space below heading */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Vertical Line in the Center */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;             /* Thicker line for better visibility */
+    background: linear-gradient(180deg, #f4d03f, #888667);
+    transform: translateX(-50%);
+    z-index: -1;            /* Behind the timeline items */
+}
+
+/* Each Timeline Entry */
+.timeline-item {
+    display: grid;
+    grid-template-columns: 40% auto 40%;  /* Date (left), dot (center), content (right) */
+    align-items: center;
+    margin-bottom: 70px;                  /* Bigger gaps for clean structure */
+    position: relative;
+}
+
+/* Date on the Left */
+.timeline-date {
+    text-align: right;
+    padding-right: 35px;
+    color: #444;
+    font-size: 1.3rem;        /* Bigger for readability */
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+/* Dot in the Center */
+.timeline-dot {
+    width: 22px;             /* Slightly bigger */
+    height: 22px;
+    background-color: #f4d03f;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 3px solid #fff; /* Adds contrast */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Box on the Right */
+.timeline-content {
+    background: #6D6A42;      /* Elegant muted gold tone */
+    color: #FFF;
+    padding: 30px 35px;       /* More padding for a refined look */
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    font-size: 18px;          /* Larger text size for readability */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Add hover effect */
+.timeline-content:hover {
+    transform: translateY(-5px); /* Slight lift */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Improve sub-headings inside the content box */
+.timeline-content h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Improve text inside the box */
+.timeline-content p {
+    margin: 6px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6; /* Better readability */
+    color: #F0F0F0;
+}
+
+
+
+/* Container with dynamic, high-end background effect */
+.about-me {
+    position: relative;
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 40px;
+    background: #1c1e22; /* Dark background for premium contrast */
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  /* Rotating radial gradient overlay for dynamic energy */
+  .about-me::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(75,108,183,0.2) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+.about-me {
+    max-width: 95%;
+    margin: 30px auto; /* Reduced height */
+    padding: 15px; /* Reduced padding */
+    background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+    border-radius: 15px;
+    color: #f5f5f5;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.about-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+.about-me p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 500;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    word-spacing: 1px;
+    user-select: text; /* ✅ Allows text selection */
+}
+
+.about-me p span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    background: linear-gradient(to right, #ffcc70, #ffeb99);
+    -webkit-background-clip: text;
+    color: #ffcc70; /* ✅ Restores text color */
+    margin-right: 10px;
+    white-space: nowrap; /* ✅ Prevents line break */
+    display: flex;
+    align-items: center;
+}
+
+.about-me p span::before {
+    content: attr(data-icon);
+    margin-right: 8px;
+    font-size: 1.4rem;
+    color: inherit; /* ✅ Restores emoji color */
+}
+
+strong {
+    font-weight: 700;
+}
+.about-me p {
+    user-select: text; /* Allows text selection */
+}
