@@ -387,7 +387,8 @@ header {
   bottom: -12px;
   border-radius: 50%;
   border: 2px dashed var(--accent);
-  animation: rotate 20s linear infinite;
+  /* Aesthetic variable speed: Fast start -> Slow middle -> Fast end */
+  animation: rotate-aesthetic 12s ease-in-out infinite;
 }
 
 .suit-image::after {
@@ -401,9 +402,11 @@ header {
   border: 1px solid var(--border);
 }
 
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes rotate-aesthetic {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(120deg); } /* Fast Swoosh */
+  80% { transform: rotate(240deg); } /* Slow, elegant drift */
+  100% { transform: rotate(360deg); } /* Fast Swoosh to loop */
 }
 
 .home-text {
