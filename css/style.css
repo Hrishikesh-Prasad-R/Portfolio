@@ -369,7 +369,7 @@ header {
   width: 380px;
   height: 380px;
   border-radius: 50%;
-  background-image: url("../assets/images/suit-image.jpg");
+  background-image: url("../assets/images/suit-image-opt.jpg");
   background-size: cover;
   background-position: 37% 50%;
   background-repeat: no-repeat;
@@ -387,8 +387,8 @@ header {
   bottom: -12px;
   border-radius: 50%;
   border: 2px dashed var(--accent);
-  /* Aesthetic variable speed: Fast start -> Slow middle -> Fast end */
-  animation: rotate-aesthetic 12s ease-in-out infinite;
+/* Aesthetic variable speed: Complex, effortless rhythm */
+  animation: rotate-aesthetic 16s linear infinite;
 }
 
 .suit-image::after {
@@ -403,10 +403,22 @@ header {
 }
 
 @keyframes rotate-aesthetic {
+  /* 0% - 15%: Gentle start (Speed ~2) */
   0% { transform: rotate(0deg); }
-  25% { transform: rotate(100deg); }  /* Slightly Fast */
-  75% { transform: rotate(260deg); }  /* Moderate/Slow (160deg in 50% time) */
-  100% { transform: rotate(360deg); } /* Slightly Fast */
+  15% { transform: rotate(30deg); } 
+  
+  /* 15% - 40%: The "Swoosh" (Speed ~5.2) */
+  40% { transform: rotate(160deg); }
+  
+  /* 40% - 65%: The "Hover" - very slow (Speed ~1.6) */
+  65% { transform: rotate(200deg); }
+  
+  /* 65% - 90%: Second "Swoosh" (Speed ~5.2) */
+  90% { transform: rotate(330deg); }
+  
+  /* 90% - 100%: Smooth glide into loop (Speed ~3) */
+  /* Matches the entry speed at 0% to prevent jerkiness */
+  100% { transform: rotate(360deg); }
 }
 
 .home-text {
@@ -896,7 +908,7 @@ footer .footer-icons a:hover i {
 .image-put {
   width: 700px;
   height: 550px;
-  background-image: url("../assets/images/contact-me-image.jpg");
+  background-image: url("../assets/images/contact-me-image-opt.jpg");
   background-size: cover;
   background-position: center;
   border-radius: var(--radius-md);

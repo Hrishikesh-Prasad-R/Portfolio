@@ -42,7 +42,7 @@
         <div class="contact-form-container">
             <h2>Let's connect</h2>
             <p>Have a question or want to collaborate? Feel free to reach out.</p>
-            <form action="submit_form.php" method="POST">
+            <form id="contactForm">
                 <div class="input-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required placeholder="Your name">
@@ -55,8 +55,31 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required placeholder="What's on your mind?"></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+                <button type="submit" id="submitBtn">Send Message</button>
             </form>
+
+            <script>
+                document.getElementById('contactForm').addEventListener('submit', function(e) {
+                    e.preventDefault(); // Stop it from going to the dead PHP link
+                    
+                    const btn = document.getElementById('submitBtn');
+                    const originalText = btn.innerText;
+                    
+                    // Show loading state
+                    btn.innerText = "Sending...";
+                    btn.disabled = true;
+                    
+                    // Fake delay for realism
+                    setTimeout(() => {
+                        alert("Message sent successfully! (Not really, but thanks for clicking!)");
+                        this.reset(); // Clear the form
+                        
+                        // Reset button
+                        btn.innerText = originalText;
+                        btn.disabled = false;
+                    }, 1500);
+                });
+            </script>
         </div>
     </div>
 
