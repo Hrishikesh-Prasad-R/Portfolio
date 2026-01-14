@@ -7,9 +7,14 @@ PORT = 8000
 class CleanUrlHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         # Handle rewrites manually for local dev
-        if self.path == '/home' or self.path == '/home/':
-            self.path = '/index.html'
-        elif self.path == '/contactme' or self.path == '/contactme/':
+        if self.path == '/home/' or self.path == '/home':
+             # Redirect old home link just in case
+            self.send_response(301)
+            self.send_header('Location', '/')
+            self.end_headers()
+            return
+            
+        if self.path == '/contacts' or self.path == '/contacts/':
             self.path = '/contacts.html'
         elif self.path == '/about' or self.path == '/about/':
             self.path = '/about.html'
