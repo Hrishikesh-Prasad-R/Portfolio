@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/home", "destination": "/index.html" },
+    { "source": "/contactme", "destination": "/contacts.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/projects", "destination": "/projects.html" }
+  ],
+  "cleanUrls": true
+}

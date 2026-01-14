@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hrishikesh</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" type="image/jpeg" href="/assets/images/circular_logo-modified.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrishikesh</title>
+    <meta name="description" content="Hrishikesh R Prasad - Developer portfolio showcasing web development and machine learning projects.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="assets/images/circular_logo-modified.png">
+</head>
 
-    </head>
-    
-    
 <body>
-    
+
+    <!-- Floating background shapes -->
+    <div class="bg-shapes">
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+    </div>
+
     <header>
         <div class="navbar">
-            <a href="index.html">
-            <div class="logo"></div>
+            <a href="/home" class="logo">
+                <span class="logo-text">Hrishikesh</span>
             </a>
             <div class="non-image">
-            <a href="about.html">About</a>
-            <a href="contacts.html">Contact me</a>
-        </div>
+                <a href="/about">About</a>
+                <a href="/contactme">Contact</a>
+            </div>
         </div>
     </header>
 
@@ -29,20 +39,18 @@
         <div class="suit-image"></div>
         <div class="home-text">
             <div class="text-stuff">
-                <h1 class="heading-home">Hey, I'm Hrishikesh.</h1>
-    
+                <h1 class="heading-home">Hello, I'm<br><span>Hrishikesh R Prasad</span></h1>
+
                 <p class="para-home">
-                    I turn ideas into reality with clean, efficient code. Passionate about building innovative solutions and pushing the boundaries of what's possible, exploring every bit of knowledge
+                    CS student at BMSCE, exploring AI/ML and building real-world systems. Focused on deterministic, explainable, production-ready solutions.
                 </p>
-    
-                <p class="para-secondary">
-                    With a focus on performance and precision, I bring ideas to life through elegant, maintainable code. Dive into my work below.
-                </p>
+
                 <a href="projects.html">
-                <button class="cta-button">Explore My Projects →</button></a>
+                    <button class="cta-button">View Projects</button>
+                </a>
             </div>
         </div>
-    </div>   
+    </div>
 
     <div class="featured-projects">
         <h2 class="projects-heading">
@@ -50,54 +58,90 @@
             Featured Projects
             <span class="line"></span>
         </h2>
-    
+
         <div class="projects-container">
-            <div class="project-card">
+            <div class="project-card" data-project-num="01">
                 <div class="project-thumbnail-wrapper">
-                    <div class="project-thumbnail" style="background-image: url('/assets/images/Amazon-clone.png');"></div>
+                    <div class="project-thumbnail" style="background-image: url('assets/images/genai-dqs.png');"></div>
                 </div>
                 <div class="project-info">
-                    <h3 class="project-title">Amazon Clone</h3>
-                    <p class="project-description">A brief description of your project goes here. Highlight what it does and the technologies used.</p>
-                    <a href="projects.html" class="project-link">View Project →</a>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>Gemini</span>
+                    </div>
+                    <h3 class="project-title">GenAI Data Quality Agent</h3>
+                    <p class="project-description">Top 11 Finalist at IIT-M VISA AI Hackathon. Rule-first validation pipeline with failure-resilient error isolation and audit logging.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Hrishikesh-Prasad-R/IITM-VISA-Hackathon" target="_blank" class="project-link-icon github-link" title="View on GitHub">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://iitm-visa-hackathon.onrender.com/" target="_blank" class="project-link-icon live-link" title="Live Demo">
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                        <a href="projects.html" class="project-link-details">Details</a>
+                    </div>
                 </div>
             </div>
-            
-             
-    
-            <div class="project-card">
+
+            <div class="project-card" data-project-num="02">
                 <div class="project-thumbnail-wrapper">
-                    <div class="project-thumbnail" style="background-image: url('/assets/images/Amazon-clone.png');"></div>
+                    <div class="project-thumbnail" style="background-image: url('assets/images/captcha-solver.png');"></div>
                 </div>
                 <div class="project-info">
-                    <h3 class="project-title">Amazon Clone</h3>
-                    <p class="project-description">A brief description of your project goes here. Highlight what it does and the technologies used.</p>
-                    <a href="projects.html" class="project-link">View Project →</a>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>YOLOv8</span>
+                        <span>Streamlit</span>
+                    </div>
+                    <h3 class="project-title">CAPTCHA Solver</h3>
+                    <p class="project-description">AI-driven CAPTCHA solver supporting text, math, and object CAPTCHAs with YOLOv8 detection. Average solving time: 0.81 seconds.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Hrishikesh-Prasad-R/captcha-solver-analyzer" target="_blank" class="project-link-icon github-link" title="View on GitHub">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://captcha-analyser.streamlit.app/" target="_blank" class="project-link-icon live-link" title="Live Demo">
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                        <a href="projects.html" class="project-link-details">Details</a>
+                    </div>
                 </div>
             </div>
-    
-            <div class="project-card">
+
+            <div class="project-card" data-project-num="03">
                 <div class="project-thumbnail-wrapper">
-                    <div class="project-thumbnail" style="background-image: url('/assets/images/Amazon-clone.png');"></div>
+                    <div class="project-thumbnail" style="background-image: url('assets/images/pqc-crypto.png');"></div>
                 </div>
                 <div class="project-info">
-                    <h3 class="project-title">Amazon Clone</h3>
-                    <p class="project-description">A brief description of your project goes here. Highlight what it does and the technologies used.</p>
-                    <a href="projects.html" class="project-link">View Project →</a>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Kyber768</span>
+                        <span>Streamlit</span>
+                    </div>
+                    <h3 class="project-title">Post-Quantum Cryptography</h3>
+                    <p class="project-description">Hybrid secure-messaging with Kyber768 + Dilithium3 + AES-256-GCM. Includes attack simulations and performance benchmarks.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Hrishikesh-Prasad-R/crypto-project" target="_blank" class="project-link-icon github-link" title="View on GitHub">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://crypto-mini-proj.streamlit.app/" target="_blank" class="project-link-icon live-link" title="Live Demo">
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                        <a href="projects.html" class="project-link-details">Details</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-
     <footer>
-        <a>&copy; 2025 Hrishikesh R Prasad</a>
+        <span>&copy; 2025 Hrishikesh R Prasad</span>
         <div class="footer-icons">
-            <p>Get in Touch &rarr;</p>
+            <p>Get in Touch</p>
             <a href="https://www.instagram.com/hrishikesh.r.p/" target="_blank" aria-label="Instagram" class="instagram-icon">
                 <i class="fa fa-instagram"></i>
             </a>
-            <a href=https://www.linkedin.com/in/hrishikesh-r-prasad-38bb76287/" target="_blank" aria-label="LinkedIn" class="linkedin-icon">
+            <a href="https://www.linkedin.com/in/hrishikeshrprasad/" target="_blank" aria-label="LinkedIn" class="linkedin-icon">
                 <i class="fa fa-linkedin"></i>
             </a>
             <a href="https://github.com/Hrishikesh-Prasad-R" target="_blank" aria-label="GitHub" class="github-icon">
@@ -105,6 +149,6 @@
             </a>
         </div>
     </footer>
-    
+
 </body>
 </html>
