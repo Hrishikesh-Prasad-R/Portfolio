@@ -404,9 +404,9 @@ header {
 
 @keyframes rotate-aesthetic {
   0% { transform: rotate(0deg); }
-  20% { transform: rotate(120deg); } /* Fast Swoosh */
-  80% { transform: rotate(240deg); } /* Slow, elegant drift */
-  100% { transform: rotate(360deg); } /* Fast Swoosh to loop */
+  25% { transform: rotate(100deg); }  /* Slightly Fast */
+  75% { transform: rotate(260deg); }  /* Moderate/Slow (160deg in 50% time) */
+  100% { transform: rotate(360deg); } /* Slightly Fast */
 }
 
 .home-text {
