@@ -1293,18 +1293,37 @@ strong {
   }
 
   /* Fix Timeline Squishing */
+  /* Fix Timeline Squishing - Make it vertical stack or tight list */
+  .timeline {
+    padding-left: 0;
+  }
+
   .timeline::before {
-    left: 15px;
+    left: 8px;
   }
 
   .timeline-dot {
-    left: 15px;
+    left: 8px;
+    width: 10px;
+    height: 10px;
   }
 
   .timeline-content {
-    margin-left: 40px;
-    width: calc(100% - 40px);
+    margin-left: 24px; /* Reduced from 50px/40px */
+    width: calc(100% - 24px);
     padding: var(--space-md);
+    margin-top: var(--space-xs);
+  }
+
+  .timeline-item {
+    padding-left: 0;
+    margin-bottom: var(--space-lg);
+  }
+
+  /* Make dates smaller and tighter */
+  .timeline-date {
+    margin-left: 24px;
+    font-size: 0.75rem;
   }
 
   /* Widen Project Cards */
