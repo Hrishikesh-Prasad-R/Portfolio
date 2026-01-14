@@ -1340,6 +1340,12 @@ strong {
   p, .project-description {
     max-width: 100%;
   }
+
+  /* Fix About Me Card Width & Padding */
+  .about-me {
+    padding: var(--space-lg);
+    margin-bottom: var(--space-xl);
+  }
 }
 
 @media (max-width: 480px) {
