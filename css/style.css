@@ -58,12 +58,16 @@ body {
   position: relative;
   overflow-x: hidden;
   /* Enhanced grid pattern - bolder with terracotta tint */
-  background-image: 
+  background-image:
     linear-gradient(rgba(196, 93, 58, 0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(196, 93, 58, 0.06) 1px, transparent 1px),
     linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
-  background-size: 80px 80px, 80px 80px, 20px 20px, 20px 20px;
+  background-size:
+    80px 80px,
+    80px 80px,
+    20px 20px,
+    20px 20px;
 }
 
 /* Abstract feather-inspired decorative curves */
@@ -74,10 +78,25 @@ body::before {
   right: -200px;
   width: 600px;
   height: 600px;
-  background: 
-    radial-gradient(ellipse at 30% 30%, transparent 60%, rgba(196, 93, 58, 0.03) 61%, transparent 62%),
-    radial-gradient(ellipse at 50% 50%, transparent 55%, rgba(196, 93, 58, 0.04) 56%, transparent 57%),
-    radial-gradient(ellipse at 70% 70%, transparent 50%, rgba(196, 93, 58, 0.03) 51%, transparent 52%);
+  background:
+    radial-gradient(
+      ellipse at 30% 30%,
+      transparent 60%,
+      rgba(196, 93, 58, 0.03) 61%,
+      transparent 62%
+    ),
+    radial-gradient(
+      ellipse at 50% 50%,
+      transparent 55%,
+      rgba(196, 93, 58, 0.04) 56%,
+      transparent 57%
+    ),
+    radial-gradient(
+      ellipse at 70% 70%,
+      transparent 50%,
+      rgba(196, 93, 58, 0.03) 51%,
+      transparent 52%
+    );
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
@@ -91,9 +110,19 @@ body::after {
   left: -150px;
   width: 500px;
   height: 500px;
-  background: 
-    radial-gradient(ellipse at 40% 40%, transparent 55%, rgba(196, 93, 58, 0.04) 56%, transparent 57%),
-    radial-gradient(ellipse at 60% 60%, transparent 50%, rgba(196, 93, 58, 0.03) 51%, transparent 52%);
+  background:
+    radial-gradient(
+      ellipse at 40% 40%,
+      transparent 55%,
+      rgba(196, 93, 58, 0.04) 56%,
+      transparent 57%
+    ),
+    radial-gradient(
+      ellipse at 60% 60%,
+      transparent 50%,
+      rgba(196, 93, 58, 0.03) 51%,
+      transparent 52%
+    );
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
@@ -101,8 +130,13 @@ body::after {
 }
 
 @keyframes floatCurves {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  50% { transform: translate(30px, 20px) rotate(10deg); }
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(30px, 20px) rotate(10deg);
+  }
 }
 
 /* Floating geometric shapes */
@@ -129,7 +163,11 @@ body::after {
   height: 300px;
   top: 10%;
   left: 5%;
-  background: radial-gradient(circle, rgba(196, 93, 58, 0.08) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(196, 93, 58, 0.08) 0%,
+    transparent 70%
+  );
   animation-delay: 0s;
   animation-duration: 25s;
 }
@@ -139,7 +177,11 @@ body::after {
   height: 200px;
   top: 60%;
   right: 10%;
-  background: radial-gradient(circle, rgba(196, 93, 58, 0.06) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(196, 93, 58, 0.06) 0%,
+    transparent 70%
+  );
   animation-delay: -5s;
   animation-duration: 22s;
 }
@@ -149,7 +191,11 @@ body::after {
   height: 150px;
   top: 30%;
   right: 25%;
-  background: radial-gradient(circle, rgba(196, 93, 58, 0.05) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(196, 93, 58, 0.05) 0%,
+    transparent 70%
+  );
   animation-delay: -10s;
   animation-duration: 28s;
 }
@@ -159,7 +205,11 @@ body::after {
   height: 100px;
   bottom: 20%;
   left: 20%;
-  background: radial-gradient(circle, rgba(196, 93, 58, 0.07) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(196, 93, 58, 0.07) 0%,
+    transparent 70%
+  );
   animation-delay: -15s;
   animation-duration: 20s;
 }
@@ -169,7 +219,11 @@ body::after {
   height: 250px;
   top: 50%;
   left: 40%;
-  background: radial-gradient(circle, rgba(196, 93, 58, 0.04) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(196, 93, 58, 0.04) 0%,
+    transparent 70%
+  );
   animation-delay: -8s;
   animation-duration: 30s;
 }
@@ -181,7 +235,12 @@ body::after {
   top: 25%;
   left: -50px;
   border-radius: 0;
-  background: linear-gradient(90deg, transparent, rgba(196, 93, 58, 0.15), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(196, 93, 58, 0.15),
+    transparent
+  );
   transform: rotate(-15deg);
   animation: fadeSlide 15s ease-in-out infinite;
   animation-delay: -3s;
@@ -193,14 +252,20 @@ body::after {
   bottom: 30%;
   right: -30px;
   border-radius: 0;
-  background: linear-gradient(90deg, transparent, rgba(196, 93, 58, 0.12), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(196, 93, 58, 0.12),
+    transparent
+  );
   transform: rotate(20deg);
   animation: fadeSlide 18s ease-in-out infinite;
   animation-delay: -7s;
 }
 
 @keyframes floatShape {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.3;
     transform: translate(0, 0) scale(1);
   }
@@ -219,7 +284,8 @@ body::after {
 }
 
 @keyframes fadeSlide {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.2;
     transform: rotate(-15deg) translateX(-20px);
   }
@@ -230,7 +296,9 @@ body::after {
 }
 
 /* --- Typography --- */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.2;
@@ -287,7 +355,7 @@ header {
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(196, 93, 58, 0.25);
   /* Subtle grid on header */
-  background-image: 
+  background-image:
     linear-gradient(rgba(196, 93, 58, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(196, 93, 58, 0.03) 1px, transparent 1px);
   background-size: 20px 20px;
@@ -387,7 +455,7 @@ header {
   bottom: -12px;
   border-radius: 50%;
   border: 2px dashed var(--accent);
-/* Aesthetic variable speed: Complex, effortless rhythm */
+  /* Aesthetic variable speed: Complex, effortless rhythm */
   animation: rotate-aesthetic 16s linear infinite;
 }
 
@@ -404,21 +472,33 @@ header {
 
 @keyframes rotate-aesthetic {
   /* 0% - 15%: Gentle start (Speed ~2) */
-  0% { transform: rotate(0deg); }
-  15% { transform: rotate(30deg); } 
-  
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(30deg);
+  }
+
   /* 15% - 40%: The "Swoosh" (Speed ~5.2) */
-  40% { transform: rotate(160deg); }
-  
+  40% {
+    transform: rotate(160deg);
+  }
+
   /* 40% - 65%: The "Hover" - very slow (Speed ~1.6) */
-  65% { transform: rotate(200deg); }
-  
+  65% {
+    transform: rotate(200deg);
+  }
+
   /* 65% - 90%: Second "Swoosh" (Speed ~5.2) */
-  90% { transform: rotate(330deg); }
-  
+  90% {
+    transform: rotate(330deg);
+  }
+
   /* 90% - 100%: Smooth glide into loop (Speed ~3) */
   /* Matches the entry speed at 0% to prevent jerkiness */
-  100% { transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .home-text {
@@ -472,6 +552,7 @@ header {
 .cta-button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-sm);
   font-family: var(--font-mono);
   font-size: 0.875rem;
@@ -484,7 +565,8 @@ header {
   cursor: pointer;
   text-decoration: none;
   transition: all 0.25s ease;
-  width: fit-content;
+  height: 52px;
+  box-sizing: border-box;
 }
 
 .cta-button:hover {
@@ -492,6 +574,51 @@ header {
   color: var(--bg);
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* CTA Buttons Container */
+.cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+/* Secondary CTA - Resume Download */
+.cta-button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: transparent;
+  border: 2px solid var(--accent);
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  height: 52px;
+  box-sizing: border-box;
+}
+
+.cta-button-secondary:hover {
+  background: var(--accent);
+  color: var(--bg);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(196, 93, 58, 0.25);
+}
+
+.cta-button-secondary i {
+  font-size: 0.875rem;
+  transition: transform 0.2s ease;
+}
+
+.cta-button-secondary:hover i {
+  transform: translateY(-1px);
 }
 
 /* --- Featured Projects --- */
@@ -572,7 +699,7 @@ header {
   border-radius: var(--radius-sm);
   position: relative;
   border: 2px solid rgba(196, 93, 58, 0.3);
-  box-shadow: 
+  box-shadow:
     0 0 0 4px rgba(196, 93, 58, 0.08),
     0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -740,7 +867,6 @@ header {
 .project-link-details:hover::after {
   transform: translateX(3px);
 }
-
 
 .project-link::after {
   content: "→";
@@ -967,7 +1093,9 @@ footer .footer-icons a:hover i {
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .input-group input:focus,
@@ -1352,7 +1480,8 @@ strong {
   }
 
   /* Allow text to use full width */
-  p, .project-description {
+  p,
+  .project-description {
     max-width: 100%;
   }
 
@@ -1369,13 +1498,15 @@ strong {
     gap: var(--space-md);
     padding: var(--space-md);
   }
-  
+
   .projects-main-heading {
     font-size: 2rem;
   }
 
   /* Even less padding for small phones */
-  .hero, .hero-projects, .projects-not-non {
+  .hero,
+  .hero-projects,
+  .projects-not-non {
     padding-left: var(--space-sm);
     padding-right: var(--space-sm);
   }
